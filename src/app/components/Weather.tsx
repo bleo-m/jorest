@@ -30,7 +30,7 @@ function Weather() {
 
     useEffect(() => {
         fetch(
-            "http://api.weatherapi.com/v1/current.json?key=78d567521670472985d235048252206&q=10002&aqi=no"
+            "https://api.weatherapi.com/v1/current.json?key=78d567521670472985d235048252206&q=10002&aqi=no"
         )
             .then((res) => res.json())
             .then((data) => setWeather(data));
